@@ -13,10 +13,16 @@ dcb
 # docker-compose build
 ```
 
+Up containers:
+```bash
+dco up
+# docker-compose up
+```
+
 Create new user for `mysql-workbench`:
 ```bash
-dce db
-# docker-compose exec db
+dce database bash
+# docker-compose exec database bash
 ### in mysql container
 mysql -u root -p
 CREATE USER 'misha'@'%' IDENTIFIED BY '123456';
@@ -34,7 +40,7 @@ cp .env.example .env
 DB_CONNECTION=mysql   # type database
 DB_HOST=database      # name container
 DB_PORT=3306
-DB_DATABASE=laravel   # name table
+DB_DATABASE=laravel   # name schema
 DB_USERNAME=misha
 DB_PASSWORD=123456 
 ```
