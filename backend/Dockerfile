@@ -31,7 +31,8 @@ RUN docker-php-ext-install \
     calendar \
     mbstring \
     pdo_mysql \
-    zip
+    zip \
+    gd
 
 # 4. composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
