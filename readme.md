@@ -13,7 +13,7 @@ dcb
 # docker-compose build
 ```
 
-Create new user for mysql-workbench:
+Create new user for `mysql-workbench`:
 ```bash
 dce db
 # docker-compose exec db
@@ -39,7 +39,7 @@ DB_USERNAME=misha
 DB_PASSWORD=123456 
 ```
 
-Install && initialization laravel project:
+Install && initialization `laravel` project:
 ```bash
 dce backend bash
 # docker-compose exec backend bash
