@@ -15,7 +15,7 @@ dcb
 
 Up containers:
 ```bash
-dco up
+dcup
 # docker-compose up
 ```
 
